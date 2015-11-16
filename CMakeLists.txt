@@ -7,6 +7,13 @@ if(NOT CMAKE_BUILD_TYPE)
 	set(CMAKE_BUILD_TYPE "Debug" CACHE STRING "Choose the type of build, options are: Debug, Release" FORCE)
 endif()
 
+set(ATROPHY_BUILD_DIR CACHE STRING "Path to the directory where libatrophy is located")
+
+if(ATROPHY_BUILD_DIR)
+	link_directories(${ATROPHY_BUILD_DIR})
+else()
+	message(FATAL_ERROR "Unable to locate libatrophy")
+endif()
 
 message(STATUS "Current Build Type: ${CMAKE_BUILD_TYPE}")
 

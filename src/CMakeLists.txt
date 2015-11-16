@@ -51,4 +51,4 @@ file(GLOB SOURCES "./*.cc")
 add_executable(hemorrhage ${SOURCES})
 
 
-target_link_libraries(hemorrhage dl LLVM clang)
+target_link_libraries(hemorrhage dl LLVM clang atrophy )

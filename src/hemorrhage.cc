@@ -1,5 +1,7 @@
 /*! \file hemorrhage.cc
 	Main application interface for hemorrhage
+
+	libclang docs: http://clang.llvm.org/doxygen/group__CINDEX.html
 */
 
 #include <string>
