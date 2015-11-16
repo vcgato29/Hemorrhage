@@ -22,7 +22,7 @@ include_directories(${LLVM_INCLUDE_DIRS})
 
 add_definitions(${LLVM_DEFINITIONS})
 
-add_definitions(-DATROPHY_VERSION_STRING="${GIT_VERSION}")
+add_definitions(-DVERSION_STRING="${GIT_VERSION}")
 
 if (CMAKE_BUILD_TYPE STREQUAL "Debug")
 	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
