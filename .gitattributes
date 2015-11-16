@@ -1,0 +1,3 @@
+*.ll linguist-language=Lex
+cmake/* linguist-vendored=false
+docs/* linguist-documentation
